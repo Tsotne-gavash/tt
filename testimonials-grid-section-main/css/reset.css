@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  max-width: 1440px;
+  font-family: "Barlow Semi Condensed", sans-serif;
+}
+main {
+  display: grid;
+  grid-template-columns: repeat(4, 20%);
+  grid-template-rows: 300px 300px;
+  grid-template-areas:
+    "test1 test1 test2 test3"
+    "test4 test5 test5 test3";
+}
+.testemonial-1 {
+  grid-area: test1;
+  background-color: blue;
+  position: relative;
+}
+.testemonial-2 {
+  grid-area: test2;
+  background-color: green;
+}
+
+.testemonial-3 {
+  grid-area: test3;
+  background-color: red;
+}
+
+.testemonial-4 {
+  grid-area: test4;
+  background-color: orange;
+}
+.testemonial-5 {
+  grid-area: test5;
+  background-color: yellow;
+}
